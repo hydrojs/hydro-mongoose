@@ -7,7 +7,7 @@ version](https://badge.fury.io/js/hydro-mongoose.png)](http://badge.fury.io/js/h
 
 ## Synopsis
 
-[mongoose](https://github.com/vesln/mongoose) cleaner for hydro.
+[mongoose](github.com/learnboost/mongoose) cleaner for hydro.
 
 Drops all collections before each test.
 
