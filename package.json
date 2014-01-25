@@ -22,7 +22,6 @@
     "mongoose": "3.x"
   },
   "devDependencies": {
-    "coveralls": "~2.3.0",
     "istanbul": "~0.1.46",
     "hydro": "*",
     "simple-assert": "*",

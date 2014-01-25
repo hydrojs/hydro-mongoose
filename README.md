@@ -1,7 +1,6 @@
 [![NPM
 version](https://badge.fury.io/js/hydro-mongoose.png)](http://badge.fury.io/js/hydro-mongoose)
 [![Build Status](https://secure.travis-ci.org/hydrojs/hydro-mongoose.png)](http://travis-ci.org/hydrojs/hydro-mongoose)
-[![Coverage Status](https://coveralls.io/repos/hydrojs/hydro-mongoose/badge.png?branch=master)](https://coveralls.io/r/hydrojs/hydro-mongoose?branch=master)
 
 # hydro-mongoose
 
