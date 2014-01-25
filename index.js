@@ -17,9 +17,19 @@ module.exports = function(hydro) {
     var collections = Object.keys(mongoose.connection.collections);
     var len = collections.length;
     if (len === 0) return done();
+
+    var timeout = setTimeout(function() {
+      throw new Error('mongoose collections drop took more than 2s. Make sure that you have established a database connection');
+    }, 2000);
+
+    var end = function() {
+      clearTimeout(timeout);
+      done();
+    };
+
     collections.forEach(function(collection) {
       mongoose.connection.collections[collection].drop(function() {
-        if (--len === 0) done();
+        if (--len === 0) end();
       });
     });
   });
