@@ -13,7 +13,7 @@ var mongoose = require('mongoose');
  */
 
 module.exports = function(hydro) {
-  hydro.on('pre:test', function(file, done) {
+  hydro.on('post:test', function(file, done) {
     var collections = Object.keys(mongoose.connection.collections);
     var len = collections.length;
     if (len === 0) return done();
